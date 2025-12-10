@@ -460,19 +460,19 @@ button {
 
 /* ===== Gallery Section ===== */
 .gallery-section {
+    background: #ffffff;
+    padding: 80px 20px;
+}
+
+.gallery-grid {
     background: #e0f5e7;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     margin: 0 auto;
     max-width: 900px;
-}
-
-.gallery-grid {
-    column-count: 1;
+    column-count: 3;
     column-gap: 20px;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 .gallery-item {
@@ -1418,7 +1418,7 @@ button {
 
 .invitation-quote {
     font-family: var(--font-heading);
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1.4;
     color: var(--dark-color);
     background: rgba(255, 255, 255, 0.85);

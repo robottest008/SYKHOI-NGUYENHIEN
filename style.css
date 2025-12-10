@@ -2045,3 +2045,143 @@ button {
 .hero-names-script {
     font-size: 2.5rem !important;
 }
+
+@media (max-width: 480px) {
+    html {
+        font-size: 15px;
+    }
+
+    .section-container {
+        padding: 45px 18px;
+    }
+
+    .hero-content {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .hero-badge {
+        font-size: 0.85rem !important;
+        letter-spacing: 1.5px !important;
+    }
+
+    .hero-names-script {
+        font-size: 2.2rem !important;
+        line-height: 1.2 !important;
+    }
+
+    .invitation-quote {
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+
+    .family-grid {
+        gap: 20px;
+    }
+
+    .family-title {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .parent-name {
+        font-size: 0.95rem;
+        letter-spacing: 0.5px;
+    }
+
+    .family-address {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .couple-names-layout {
+        gap: 18px;
+        margin-bottom: 40px;
+    }
+
+    .couple-role {
+        font-size: 0.95rem;
+        letter-spacing: 1px;
+    }
+
+    .couple-name-script {
+        font-size: 2.3rem;
+    }
+
+    .heart-divider svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .ceremony-date-box {
+        padding: 30px 20px;
+    }
+
+    .ceremony-heading {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    .ceremony-sub-heading {
+        font-size: 1rem;
+    }
+
+    .time-big,
+    .year-big {
+        font-size: 1rem;
+    }
+
+    .date-big {
+        font-size: 2.7rem;
+    }
+
+    .party-card-new {
+        padding: 30px 18px;
+    }
+
+    .party-title-new {
+        font-size: 1.05rem;
+    }
+
+    .party-date-bold {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+
+    .party-btns-new button {
+        width: 100%;
+    }
+
+    .calendar-title {
+        font-size: 1.4rem;
+    }
+
+    .calendar-grid {
+        gap: 6px;
+    }
+
+    .cal-day {
+        font-size: 0.85rem;
+    }
+
+    .location-heading {
+        font-size: 2.2rem;
+    }
+
+    .loc-info h3 {
+        font-size: 1.05rem;
+    }
+
+    .loc-info p {
+        font-size: 0.85rem;
+    }
+
+    .btn-map-outline {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+
+    .section-title {
+        font-size: 2.1rem;
+    }
+}

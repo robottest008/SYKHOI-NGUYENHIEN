@@ -7,14 +7,12 @@
     <title>THƯ MỜI CƯỚI - SỸ KHỞI & NGUYỄN HIỀN</title>
     <meta name="description" content="Trân trọng kính mời bạn đến dự lễ thành hôn của chúng tôi">
 
-    <!-- Open Graph / Facebook / Zalo -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="THƯ MỜI CƯỚI - SỸ KHỞI & NGUYỄN HIỀN">
     <meta property="og:description" content="Trân trọng kính mời bạn đến dự lễ thành hôn của chúng tôi">
     <meta property="og:image" content="https://robottest008.github.io/SYKHOI-NGUYENHIEN/images/1.1.JPG">
     <meta property="og:url" content="https://robottest008.github.io/SYKHOI-NGUYENHIEN/">
     
-    <!-- Zalo / Google specific -->
     <meta itemprop="name" content="THƯ MỜI CƯỚI - SỸ KHỞI & NGUYỄN HIỀN">
     <meta itemprop="description" content="Trân trọng kính mời bạn đến dự lễ thành hôn của chúng tôi">
     <meta itemprop="image" content="https://robottest008.github.io/SYKHOI-NGUYENHIEN/images/1.1.JPG">
@@ -23,9 +21,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -145,7 +141,7 @@
 
                 <div class="party-btns-new">
                     <button class="btn-rsvp-gray" onclick="openRSVPModal()">XÁC NHẬN THAM DỰ</button>
-                    <button class="btn-gift-red" onclick="openGiftModal()">GỬI MỪNG CƯỚI</button>
+                    <button class="btn-gift-red" onclick="openGiftModal('groom')">GỬI MỪNG CƯỚI</button>
                 </div>
             </div>
 
@@ -161,7 +157,7 @@
 
                 <div class="party-btns-new">
                     <button class="btn-rsvp-gray" onclick="openRSVPModal()">XÁC NHẬN THAM DỰ</button>
-                    <button class="btn-gift-red" onclick="openGiftModal()">GỬI MỪNG CƯỚI</button>
+                    <button class="btn-gift-red" onclick="openGiftModal('bride')">GỬI MỪNG CƯỚI</button>
                 </div>
             </div>
         </div>
@@ -253,7 +249,7 @@
                             <div class="loc-info">
                                 <h3>NHÀ TRAI</h3>
                                 <p>TẠI TƯ GIA NHÀ TRAI</p>
-                                <p>Thôn Đại Lộc, Xã Gia Bình, Bắc Ninh</p>
+                                <p>Thôn Đại Lộc, Xã Gia Bình, Tỉnh Bắc Ninh</p>
                             </div>
                             <button class="btn-map-outline"
                                 onclick="window.open('https://maps.app.goo.gl/vJKv8fUTssKQa9Ue8', '_blank')">Xem Chỉ
@@ -270,7 +266,7 @@
                             <div class="loc-info">
                                 <h3>NHÀ GÁI</h3>
                                 <p>TẠI TƯ GIA NHÀ GÁI</p>
-                                <p>Thôn Nội Phú, Gia Bình, Bắc Ninh</p>
+                                <p>Thôn Nội Phú, Xã Gia Bình, Tỉnh Bắc Ninh</p>
                             </div>
                             <button class="btn-map-outline"
                                 onclick="window.open('https://maps.app.goo.gl/8VNVgDb4Zq5nU95VA', '_blank')">Xem Chỉ
@@ -404,9 +400,10 @@
             <span class="close-modal" onclick="closeGiftModal()">&times;</span>
             <h2 class="modal-title">Gửi Mừng Cưới</h2>
             <div class="qr-container">
-                <img src="images/qr.png" alt="QR Code chuyển khoản mừng cưới" class="qr-code">
-                <p class="qr-caption">Chúc mừng hạnh phúc!</p>
+                <img id="qrImage" src="" alt="QR Code" class="qr-code">
+                <p id="qrName" class="qr-caption" style="font-weight: bold; margin-top: 10px;"></p>
             </div>
+            <h2 class="modal-title">Chúc mừng hạnh phúc!</h2>
         </div>
     </div>
 

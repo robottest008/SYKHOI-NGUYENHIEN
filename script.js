@@ -25,8 +25,17 @@ function closeRSVPModal() {
     document.body.style.overflow = '';
 }
 
-function openGiftModal() {
+function openGiftModal(type) {
     const modal = document.getElementById('giftModal');
+    const qrImage = document.getElementById('qrImage');
+    const qrName = document.getElementById('qrName');
+
+    if (type === 'groom') {
+        qrImage.src = 'images/qr1.png';
+    } else {
+        qrImage.src = 'images/qr.png';
+    }
+
     modal.classList.add('show');
     document.body.style.overflow = 'hidden';
 }
